@@ -31,18 +31,18 @@ component:
       # Launch the app in debug mode? Recommended False for production servers.
       debug: True
       # The IP for Kyoukai to bind to.
-      ip: 127.0.0.1
+      # ip: 127.0.0.1
       # The port for Kyoukai to bind to.
-      port: 4444
+      # port: 4444
     # The redis component.
     # This is ignored if `use_redis` is set to False.
     redis:
       connections:
         redis:
           # The address of your Redis server.
-          address: 127.0.0.1
+          # address: 127.0.0.1
           # The port of your Redis server.
-          port: 6379
+          # port: 6379
           # The database to connect to on Redis.
           db: 1
           # The password for your Redis server.
