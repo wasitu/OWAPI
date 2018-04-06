@@ -126,7 +126,7 @@ class APIComponent(ContainerComponent):
         app.config["owapi_cache_time"] = cache_time
 
     async def start(self, ctx):
-        self.add_component('kyoukai', KyoukaiComponent, ip="127.0.0.1", port=4444), app="app:app", template_renderer=None)
+        self.add_component('kyoukai', KyoukaiComponent, ip="127.0.0.1", port=4444, app="app:app", template_renderer=None)
         ctx.session = ClientSession(headers={"User-Agent": "owapi scraper/1.0.1"}, request_class=AiohttpHackyClientRequest)
         if app.config["owapi_use_redis"]:
             from asphalt.redis.component import RedisComponent
