@@ -20,6 +20,7 @@ from werkzeug.routing import RequestRedirect
 from werkzeug.wrappers import Response
 
 from owapi.v3 import api_v3
+from urllib.parse import urlparse
 
 # Fuck your logging config.
 
