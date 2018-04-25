@@ -61,7 +61,7 @@ def with_ratelimit(bucket: str, timelimit: int = None, max_reqs: int = 0):
             """
             
             # ignore ratelimits
-#            if ctx.app.config["owapi_disable_ratelimits"]:
+            if True:
                 # Don't bother with ratelimits.
                 return await func(ctx, *args, **kwargs)
 
