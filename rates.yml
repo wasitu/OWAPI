@@ -2,5 +2,5 @@
 ## This specifies a 1/1 ratelimit for all users.
 rates:
   ".*":
-    time: 32
-    max_reqs: 32
+    time: 1
+    max_reqs: 1
