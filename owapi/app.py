@@ -117,7 +117,7 @@ class APIComponent(ContainerComponent):
     Container for other components. I think.
     """
 
-    def __init__(self, components, use_redis=True, do_profiling=False, disable_ratelimits=False,
+    def __init__(self, components, use_redis=True, do_profiling=False, disable_ratelimits=True,
                  cache_time: int = None):
         super().__init__(components)
         app.config["owapi_use_redis"] = use_redis
