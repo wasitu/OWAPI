@@ -114,7 +114,7 @@ def with_ratelimit(bucket: str, timelimit: int = None, max_reqs: int = 0):
                             ttl = _timelimit
 
                         return {"error": 429, "msg": "you are being ratelimited",
-                                "retry": ttl}, 429, {"Retry-After": ttl}
+                                "retry": ttl, "_timelimit": _timelimit, "_max_reqs": _max_reqs}, 429, {"Retry-After": ttl}
 
                     # LPUSH a `1` or something onto the edge of the list.
                     # The actual value doesn't matter.
