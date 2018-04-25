@@ -3,4 +3,4 @@
 rates:
   ".*":
     time: 1
-    max_reqs: 32
+    max_reqs: 1

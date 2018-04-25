@@ -42,7 +42,7 @@ async def e404(ctx: HTTPRequestContext, exc):
 
 
 @api_v3.route("/u/<battletag>/blob", reverse_hooks=True)
-@with_ratelimit("blob", timelimit=5, max_reqs=1)
+@with_ratelimit("blob")
 async def get_blob(ctx: HTTPRequestContext, battletag: str):
     """
     Returns a giant blob of data.
